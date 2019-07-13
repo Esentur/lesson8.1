@@ -7,9 +7,14 @@ public class RpgGame {
     public static void startGame() {
         Boss boss = new Boss(400, 30);
         Hero[] heroes = getHeroesArray();
+        int i=1;
         while (!isFinished(heroes, boss)) {
+            System.out.println("___________________________");
+            System.out.println("round "+i);
             showStatistics(heroes, boss);
             round(heroes, boss);
+
+            i++;
         }
     }
 
@@ -67,7 +72,8 @@ public class RpgGame {
                 new Magical(100, 12),
                 new Warrior(100, 10),
                 new Hunter(100, 10),
-                new Medical(100, 10)
+                new Medical(100, 10),
+                new Thor(100, 10)
         };
         return heroes;
     }

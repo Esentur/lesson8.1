@@ -4,5 +4,6 @@ public enum Ability {//сложный тип данных в которых ес
     CRITICAL_DAMAGE,
     SAVE_DAMAGE_AND_REVERT,
     HEAL,
-    BOOST
+    BOOST,
+    THUNDER_HIT
 }
